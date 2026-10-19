@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Nhật Kí Thanh Xuân | 10Aspire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NÚT ÂM THANH -->
+  <button
+    class="music-toggle"
+    id="musicButton"
+    type="button"
+    aria-label="Bật nhạc nền"
+    aria-pressed="false"
+    title="Bật / tắt nhạc nền"
+  >
+    <span class="music-icon" aria-hidden="true">♫</span>
+  </button>
+
+  <main>
+    <!-- MÀN HÌNH CHÀO -->
+    <section class="welcome-screen" id="welcomeScreen">
+      <div class="welcome-decoration decoration-one">✦</div>
+      <div class="welcome-decoration decoration-two">✧</div>
+      <div class="welcome-decoration decoration-three">♡</div>
+
+      <div class="class-brand">
+        <span class="brand-sparkle">✧</span>
+        <span class="brand-name">10Aspire</span>
+        <span class="brand-sparkle">✧</span>
+      </div>
+
+      <p class="brand-caption">A LITTLE PIECE OF OUR YOUTH</p>
+
+      <div class="welcome-title">
+        <p class="eyebrow">GỬI NHỮNG NGÀY THÁNG TƯƠI ĐẸP</p>
+        <h1>Nhật Kí <span>Thanh Xuân</span></h1>
+        <p class="welcome-date">20 · 10 · 2026</p>
+      </div>
+
+      <!-- GIỮ BÓ HOA TULIP 3D -->
+      <section class="bouquet-area" id="bouquet3d" aria-label="Bó hoa tulip 3D">
+        <div class="glow"></div>
+        <p id="modelStatus">Đang chuẩn bị một món quà nhỏ...</p>
+      </section>
+
+      <p class="welcome-subtitle">
+        Có những khoảnh khắc sẽ qua đi, nhưng kỉ niệm thì ở lại.
+      </p>
+
+      <button class="start-button" id="startBtn" type="button">
+        <span>✧</span> MỞ CUỐN NHẬT KÍ <span>✧</span>
+      </button>
+
+      <p class="welcome-hint">Một cuốn album nhỏ, lưu giữ những ngày thanh xuân.</p>
+    </section>
+
+    <!-- ALBUM NHẬT KÍ 15 ẢNH -->
+    <section class="album-screen" id="albumScreen" hidden>
+      <div class="album-background">
+        <span class="floating-heart heart-one">♡</span>
+        <span class="floating-heart heart-two">✧</span>
+        <span class="floating-heart heart-three">♡</span>
+        <span class="floating-heart heart-four">✦</span>
+      </div>
+
+      <header class="album-header">
+        <p class="album-eyebrow">OUR LITTLE MEMORY BOOK</p>
+        <h2>Nhật Kí <span>Thanh Xuân</span></h2>
+        <p class="album-intro">
+          15 khung hình, 15 mảnh kí ức và thật nhiều điều đáng nhớ.
+        </p>
+        <div class="album-divider"><span>♡</span></div>
+      </header>
+
+      <div class="album-grid" id="albumGrid">
+        <!-- ẢNH 01 -->
+        <button class="memory-card" type="button" data-photo="0">
+          <span class="photo-frame">
+            <img src="assets/album/anh-01.jpg" alt="Kỉ niệm 1" loading="lazy">
+            <span class="photo-placeholder">ẢNH 01</span>
+            <span class="photo-number">01</span>
+          </span>
+          <span class="memory-caption">Một ngày đáng nhớ</span>
+          <span class="memory-date">MEMORY NO. 01</span>
+        </button>
+
+        <!-- ẢNH 02 -->
+        <button class="memory-card" type="button" data-photo="1">
+          <span class="photo-frame">
+            <img src="assets/album/anh-02.jpg" alt="Kỉ niệm 2" loading="lazy">
+            <span class="photo-placeholder">ẢNH 02</span>
+            <span class="photo-number">02</span>
+          </span>
+          <span class="memory-caption">Những người bạn thân thương</span>
+          <span class="memory-date">MEMORY NO. 02</span>
+        </button>
+
+        <!-- ẢNH 03 -->
+        <button class="memory-card" type="button" data-photo="2">
+          <span class="photo-frame">
+            <img src="assets/album/anh-03.jpg" alt="Kỉ niệm 3" loading="lazy">
+            <span class="photo-placeholder">ẢNH 03</span>
+            <span class="photo-number">03</span>
+          </span>
+          <span class="memory-caption">Thanh xuân có cậu</span>
+          <span class="memory-date">MEMORY NO. 03</span>
+        </button>
+
+        <!-- ẢNH 04 -->
+        <button class="memory-card" type="button" data-photo="3">
+          <span class="photo-frame">
+            <img src="assets/album/anh-04.jpg" alt="Kỉ niệm 4" loading="lazy">
+            <span class="photo-placeholder">ẢNH 04</span>
+            <span class="photo-number">04</span>
+          </span>
+          <span class="memory-caption">Ngày chúng mình gặp nhau</span>
+          <span class="memory-date">MEMORY NO. 04</span>
+        </button>
+
+        <!-- ẢNH 05 -->
+        <button class="memory-card" type="button" data-photo="4">
+          <span class="photo-frame">
+            <img src="assets/album/anh-05.jpg" alt="Kỉ niệm 5" loading="lazy">
+            <span class="photo-placeholder">ẢNH 05</span>
+            <span class="photo-number">05</span>
+          </span>
+          <span class="memory-caption">Những nụ cười</span>
+          <span class="memory-date">MEMORY NO. 05</span>
+        </button>
+
+        <!-- ẢNH 06 -->
+        <button class="memory-card" type="button" data-photo="5">
+          <span class="photo-frame">
+            <img src="assets/album/anh-06.jpg" alt="Kỉ niệm 6" loading="lazy">
+            <span class="photo-placeholder">ẢNH 06</span>
+            <span class="photo-number">06</span>
+          </span>
+          <span class="memory-caption">Một chút tinh nghịch</span>
+          <span class="memory-date">MEMORY NO. 06</span>
+        </button>
+
+        <!-- ẢNH 07 -->
+        <button class="memory-card" type="button" data-photo="6">
+          <span class="photo-frame">
+            <img src="assets/album/anh-07.jpg" alt="Kỉ niệm 7" loading="lazy">
+            <span class="photo-placeholder">ẢNH 07</span>
+            <span class="photo-number">07</span>
+          </span>
+          <span class="memory-caption">Chuyện ở lớp mình</span>
+          <span class="memory-date">MEMORY NO. 07</span>
+        </button>
+
+        <!-- ẢNH 08 -->
+        <button class="memory-card" type="button" data-photo="7">
+          <span class="photo-frame">
+            <img src="assets/album/anh-08.jpg" alt="Kỉ niệm 8" loading="lazy">
+            <span class="photo-placeholder">ẢNH 08</span>
+            <span class="photo-number">08</span>
+          </span>
+          <span class="memory-caption">Khoảnh khắc bất chợt</span>
+          <span class="memory-date">MEMORY NO. 08</span>
+        </button>
+
+        <!-- ẢNH 09 -->
+        <button class="memory-card" type="button" data-photo="8">
+          <span class="photo-frame">
+            <img src="assets/album/anh-09.jpg" alt="Kỉ niệm 9" loading="lazy">
+            <span class="photo-placeholder">ẢNH 09</span>
+            <span class="photo-number">09</span>
+          </span>
+          <span class="memory-caption">Ngày vui của chúng mình</span>
+          <span class="memory-date">MEMORY NO. 09</span>
+        </button>
+
+        <!-- ẢNH 10 -->
+        <button class="memory-card" type="button" data-photo="9">
+          <span class="photo-frame">
+            <img src="assets/album/anh-10.jpg" alt="Kỉ niệm 10" loading="lazy">
+            <span class="photo-placeholder">ẢNH 10</span>
+            <span class="photo-number">10</span>
+          </span>
+          <span class="memory-caption">Một tấm hình, nhiều câu chuyện</span>
+          <span class="memory-date">MEMORY NO. 10</span>
+        </button>
+
+        <!-- ẢNH 11 -->
+        <button class="memory-card" type="button" data-photo="10">
+          <span class="photo-frame">
+            <img src="assets/album/anh-11.jpg" alt="Kỉ niệm 11" loading="lazy">
+            <span class="photo-placeholder">ẢNH 11</span>
+            <span class="photo-number">11</span>
+          </span>
+          <span class="memory-caption">Những điều giản dị</span>
+          <span class="memory-date">MEMORY NO. 11</span>
+        </button>
+
+        <!-- ẢNH 12 -->
+        <button class="memory-card" type="button" data-photo="11">
+          <span class="photo-frame">
+            <img src="assets/album/anh-12.jpg" alt="Kỉ niệm 12" loading="lazy">
+            <span class="photo-placeholder">ẢNH 12</span>
+            <span class="photo-number">12</span>
+          </span>
+          <span class="memory-caption">Ngày tháng không quên</span>
+          <span class="memory-date">MEMORY NO. 12</span>
+        </button>
+
+        <!-- ẢNH 13 -->
+        <button class="memory-card" type="button" data-photo="12">
+          <span class="photo-frame">
+            <img src="assets/album/anh-13.jpg" alt="Kỉ niệm 13" loading="lazy">
+            <span class="photo-placeholder">ẢNH 13</span>
+            <span class="photo-number">13</span>
+          </span>
+          <span class="memory-caption">Cùng nhau lớn lên</span>
+          <span class="memory-date">MEMORY NO. 13</span>
+        </button>
+
+        <!-- ẢNH 14 -->
+        <button class="memory-card" type="button" data-photo="13">
+          <span class="photo-frame">
+            <img src="assets/album/anh-14.jpg" alt="Kỉ niệm 14" loading="lazy">
+            <span class="photo-placeholder">ẢNH 14</span>
+            <span class="photo-number">14</span>
+          </span>
+          <span class="memory-caption">Gửi những ngày tươi đẹp</span>
+          <span class="memory-date">MEMORY NO. 14</span>
+        </button>
+
+        <!-- ẢNH 15 -->
+        <button class="memory-card final-memory" type="button" data-photo="14">
+          <span class="photo-frame">
+            <img src="assets/album/anh-15.jpg" alt="Kỉ niệm 15" loading="lazy">
+            <span class="photo-placeholder">ẢNH 15</span>
+            <span class="photo-number">15</span>
+          </span>
+          <span class="memory-caption">Còn mãi trong tim</span>
+          <span class="memory-date">MEMORY NO. 15</span>
+        </button>
+      </div>
+
+      <footer class="album-footer">
+        <span>♡</span>
+        <p>Tuổi trẻ của chúng mình, một cuốn nhật kí chưa bao giờ khép lại.</p>
+        <span>♡</span>
+        <button class="back-home-button" id="backHomeBtn" type="button">
+          ↶ Về trang đầu
+        </button>
+      </footer>
+    </section>
+  </main>
+
+  <!-- HỘP XEM ẢNH VÀ LỜI NHẮN -->
+  <section class="photo-modal" id="photoModal" hidden aria-modal="true" role="dialog" aria-label="Kỉ niệm trong album">
+    <button class="modal-close" id="closeModalBtn" type="button" aria-label="Đóng">×</button>
+    <button class="modal-arrow modal-prev" id="prevPhotoBtn" type="button" aria-label="Ảnh trước">‹</button>
+
+    <div class="modal-content">
+      <div class="modal-photo-wrap">
+        <img id="modalPhoto" src="" alt="Ảnh kỉ niệm">
+      </div>
+      <div class="modal-note">
+        <p class="modal-kicker" id="modalNumber">MEMORY NO. 01</p>
+        <h3 id="modalTitle">Một ngày đáng nhớ</h3>
+        <p id="modalMessage">Một khoảnh khắc nhỏ, một kỉ niệm thật đẹp.</p>
+        <p class="modal-counter" id="modalCounter">01 / 15</p>
+      </div>
+    </div>
+
+    <button class="modal-arrow modal-next" id="nextPhotoBtn" type="button" aria-label="Ảnh tiếp theo">›</button>
+  </section>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
